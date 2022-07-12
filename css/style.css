@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Poppins:wght@400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+:root{
+    --bg-color1: #38CC8B;
+    --bg-color2: #5E54A4;
+    --text-color: #3D3B48;
+}
+body{
+    font-family: 'Poppins', arial, sans-serif;
+    background-image: url("../images/bg.jpg");
+    background-size: 100%;
+    background-position: center ;
+}
+.container{
+    width: 1150px;
+    padding: 0 20px;
+    margin: 10px auto;
+}
+.formm{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.form-left{
+    width: 525px;
+    padding: 290px 0 0 0;
+}
+.form-left h1{
+    height: 131px;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 55px;
+    color: #FFFFFF;
+    margin: 0 0 11px 0;
+}
+.form-left p{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: #FFFFFF
+}
+.form-right{
+    width: 540px;
+    padding: 121px 165px 121px 45px;
+}
+.form-right >p{
+    width:540px;
+    height:60px;
+    background: var(--bg-color2);
+    -webkit-box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.14688);
+            box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.14688);
+    border-radius: 10px;
+    font-size: 15px;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 17px 0;
+}
+form{
+    width: 540px;
+    height:562px;
+    background: #FFFFFF;
+    -webkit-box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.14688);
+            box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.14688);
+    border-radius: 10px;
+    margin: 24px 0;
+    padding: 40px;
+}
+input{
+    height: 56px;
+    width: 460px;
+    background: #FFFFFF;
+    border: 1px solid #DEDEDE;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 26px;
+    letter-spacing: 0.25px;
+    color: var(--text-color);
+    padding:15px 35px;
+    margin: 6px 0;
+    caret-color: #5E54A4;
+    outline: none;
+}
+input:focus{
+    border: 1px solid #5E54A4;
+}
+form > button{
+    height: 56px;
+    width: 460px;
+    background: var(--bg-color1);
+    -webkit-box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.0908818);
+            box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.0908818);
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 26px;
+    letter-spacing: 1px;
+    color: #FFFFFF;
+    padding: 15px 0;
+    border: none;
+    margin: 10px 0 0 0;
+    cursor: pointer;
+}
+form >p{
+    font-size: 11px;
+    line-height: 26px;
+    text-align: center;
+    color: #BAB7D4;
+    padding: 8px 0;
+}
+form >p>a{
+    color: #FF7979;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 13px;
+}
+.invalid{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 16px;
+    text-align: right;
+    color: #FF7979;
+    padding-bottom: 10px;
+    opacity: 0;
+}
+input:not(:-moz-placeholder-shown):not(:focus):invalid{
+    border: 2px solid #FF7979;
+    background-image: url("../images/Group 11.svg");
+    background-size: 20px;
+    background-position: right 15px center;
+    background-repeat: no-repeat;
+}
+input:not(:-ms-input-placeholder):not(:focus):invalid{
+    border: 2px solid #FF7979;
+    background-image: url("../images/Group 11.svg");
+    background-size: 20px;
+    background-position: right 15px center;
+    background-repeat: no-repeat;
+}
+input:not(:placeholder-shown):not(:focus):invalid{
+    border: 2px solid #FF7979;
+    background-image: url("../images/Group 11.svg");
+    background-size: 20px;
+    background-position: right 15px center;
+    background-repeat: no-repeat;
+}
+input:not(:-moz-placeholder-shown):not(:focus):invalid~ .invalid{
+    opacity: 1;
+}
+input:not(:-ms-input-placeholder):not(:focus):invalid~ .invalid{
+    opacity: 1;
+}
+input:not(:placeholder-shown):not(:focus):invalid~ .invalid{
+    opacity: 1;
+}
